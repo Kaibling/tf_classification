@@ -149,7 +149,6 @@ history = model.fit_generator(
     epochs=epochs,
     validation_data=val_data_gen,
     validation_steps=total_val // batch_size
-      #callbacks=[cp_callback]
   )
 
 show_model_history(history,epochs)
